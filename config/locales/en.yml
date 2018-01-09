@@ -30,16 +30,7 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  controllers:
-    concerns:
-      users_controller:
-        welcome: "Welcome to the Sample App!"
   views:
-    users:
-      new:
-        signup: Sign up
-        pas: Confirmation
-        sub: Create my account
     static_pages:
       rail_t: Ruby on Rails Tutorial
       home:
