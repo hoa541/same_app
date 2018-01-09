@@ -1,6 +1,10 @@
 class UsersController < ApplicationController
   def show
     @user = User.find_by_id params[:id]
+    if @user.nil?
+      flash[:user_not_found] = t"controllers.concerns.users_controller.flash"
+      redirect_to root_path
+    end
     end
   def new
     @user = User.new
@@ -8,7 +12,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      flash[:success] = t "controllers.concerns.users_controller.welcome"
+      log_in @user
+      flash[:success] = t"controllers.concerns.users_controller.welcome"
       redirect_to @user
     else
       render :new

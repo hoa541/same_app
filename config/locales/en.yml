@@ -30,10 +30,15 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  helpers:
+    tul: Ruby on Rails Tutorial Sample App
   controllers:
     concerns:
       users_controller:
         welcome: "Welcome to the Sample App!"
+        flash: "User not found"
+      sessions:
+        mis: "Invalid email/password combination"
   views:
     users:
       new:
@@ -43,6 +48,7 @@ en:
     static_pages:
       rail_t: Ruby on Rails Tutorial
       home:
+        home: Home
         welcome: Welcome to the Sample App
         home_t: This is the home page for the %{rail_t} sample application.
         sign_up: Sign up now!
@@ -72,3 +78,18 @@ en:
         home: Home
         help: Help
         login: Log in
+        Profile: Profile
+        Settings: Settings
+        Logout: Log out
+        Users: Users
+        account: Account
+    shared:
+      error_messages:
+        errors_count: "The form contains"
+        error: "error"
+    sessions:
+      new:
+        login: Log in
+        signup: Sign up now!
+        remember: Remember me
+        new: New user?
