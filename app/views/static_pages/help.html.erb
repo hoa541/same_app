@@ -1,4 +1,4 @@
-<h1><%= t(".help")%></h1>
+<% provide :title, t("views.static_pages.help.help") %>
 <p><%= raw t("views.static_pages.help.help_t",
     help_p: link_to(t("views.static_pages.help.help_p"), "http://www.railstutorial.org/help"),
     rail_t: link_to(t("views.static_pages.rail_t"), "http://www.railstutorial.org/help"))%>
