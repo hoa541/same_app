@@ -37,10 +37,22 @@ en:
       users_controller:
         welcome: "Welcome to the Sample App!"
         flash: "User not found"
+        update_t: "Profile updated"
+        delete_t: "User deleted"
+        login_t: "Please log in."
       sessions:
         mis: "Invalid email/password combination"
   views:
     users:
+      edit:
+        tul: "Edit user"
+        tul1: "Update your profile"
+        change: change
+      index:
+        tul: "All users"
+      user:
+        del: "delete"
+        sure: "You sure?"
       new:
         signup: Sign up
         pas: Confirmation
